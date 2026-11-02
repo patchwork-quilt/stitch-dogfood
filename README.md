@@ -15,9 +15,9 @@ audit it with stitch itself.
 
 ## Current state (maintained by the sync)
 
-Anchor: `none`
-Entries: 0
-Board bookings mirrored: 0
+Anchor: `8e1635e5a41be794`
+Entries: 180
+Board bookings mirrored: 70
 
 The anchor is the ledger's head hash. If it does not equal the head
 hash you compute from `bookings.jsonl` yourself (see *Verify it
