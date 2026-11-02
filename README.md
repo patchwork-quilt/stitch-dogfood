@@ -141,5 +141,23 @@ historical record. To retire the record entirely, archive this repo
 ## First-run proof (2026-11-02)
 
 <!-- PROOF -->
-Proof pending the first sync.
+First sync run on Oracle at 2026-11-02T18:59Z, then verified from a
+fresh clone of this repo with a fresh install of stitch (the exact
+commands in *Verify it yourself* above):
+
+- Board: 70 rows parsed across 4 box files (thor, proart, proart’s
+  fellow boxes jetson-orin and oracle) — 70 unique bookings, no
+  content collisions. All 70 were booked (send + receive); the 36
+  rows the board marks DONE were closed in the same run
+  ( revocations); 34 bookings stand open.
+- Ledger: 180 entries (4 tenant budget declarations, 140 booking
+  halves, 36 revocations).
+- Audit verdict on the pushed ledger: ,
+  , .
+- Anchor: the head hash computed from the fresh clone,
+  , equals the anchor block above.
+- Tamper demonstration (on a copy in /tmp, never the real ledger):
+  one byte flipped at the file’s midpoint →
+  , , .
+  The audit refuses exactly as specified.
 <!-- /PROOF -->
