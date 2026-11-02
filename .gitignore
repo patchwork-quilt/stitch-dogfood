@@ -1,0 +1,6 @@
+# Checkout-local machinery (see README "How the sync works") — never committed.
+board/
+venv/
+stitch-src/
+sync.log
+__pycache__/

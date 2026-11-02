@@ -1,0 +1,7 @@
+stitch repo: https://github.com/patchwork-quilt/stitch
+stitch commit: a3d25e6ea8d2f8a950038a18b0bf29903c675c91
+stitch package: stitch-substrate 0.4.1 (stitch-python/)
+Installed into venv/ from a clone of that commit at stitch-src/.
+To move the pin: check out the new commit in stitch-src/, re-run
+`venv/bin/pip install --force-reinstall ./stitch-src/stitch-python`,
+and commit the updated PIN with the sync run that first uses it.
